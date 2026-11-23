@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Souvik Sinha — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Souvik Sinha: projects, skills and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  </div>
+
+  <header class="nav">
+    <a href="#top" class="logo">SS<span>.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="btn btn-small">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">👋 Hello, I'm</p>
+      <h1>Souvik <span class="gradient-text">Sinha</span></h1>
+      <p class="tagline">I build <span class="rotator" data-words='["websites","apps","ideas","experiences"]'>websites</span> that people love to use.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Say hello</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title"><span>01</span> About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a curious creator who enjoys turning ideas into colorful, usable things on the web. I care about clean code, thoughtful design and details that make people smile.</p>
+          <p>When I'm not coding, you'll find me learning something new, exploring music, or sketching my next side project.</p>
+          <p class="note">✏️ Edit this text in <code>index.html</code> to tell your own story.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong data-count="3">3</strong><span>Years learning</span></div>
+          <div class="stat"><strong data-count="12">12</strong><span>Projects built</span></div>
+          <div class="stat"><strong data-count="100">100</strong><span>% curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title"><span>02</span> Skills</h2>
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+        <li>Python</li><li>Git &amp; GitHub</li><li>UI Design</li><li>Figma</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title"><span>03</span> Projects</h2>
+      <div class="cards">
+        <article class="card c1">
+          <div class="card-icon">🚀</div>
+          <h3>Project One</h3>
+          <p>A short description of what this project does and why it's interesting.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+        <article class="card c2">
+          <div class="card-icon">🎨</div>
+          <h3>Project Two</h3>
+          <p>Another highlight — maybe a design system, a game, or a useful tool.</p>
+          <div class="tags"><span>JavaScript</span><span>Canvas</span></div>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+        <article class="card c3">
+          <div class="card-icon">⚡</div>
+          <h3>Project Three</h3>
+          <p>Something you're proud of. Link to the repo or a live demo.</p>
+          <div class="tags"><span>React</span><span>API</span></div>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <h2>Let's build something <span class="gradient-text">together</span>.</h2>
+      <p>Have an idea, a question, or just want to say hi? My inbox is open.</p>
+      <div class="hero-cta">
+        <a href="mailto:you@example.com" class="btn">Email me</a>
+        <a href="https://github.com/souviksinha-gif" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Souvik Sinha · Made with ❤️ and lots of color</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
